@@ -16,14 +16,29 @@
   <div class="jumbtron text-center">
       <h1>This is my site!</h1>
 
-    <button type="button" class="btn btn-primary">
-      Change the Text 2
+    <button type="button" class="btn btn-primary" onclick="changeText()">
+      Change the Text
     </button>
+  </div>
+
+  <div>
+    <h1 class="jumbtron text-center">JavaScript Topics</h1>
+    <h3>-JS foundation-</h3>
+    <li>Types and Variables</li>
+    <li>Operator</li>
+    <li>Comparisons</li>
+    <li>Conditionals, Flows, Loops</li>
+    <li>Finction</li>
+    <li>Pbjects</li>
+    <li>Built-In Objects</li>
   </div>
 
   <script>
     const header = document.querySelector('h1');
-   //header.innerText = 'Hello World';
+    function changeText (){
+      header.innerText = 'Hello World!'
+    }
+
   </script>
 </body>
 </html>
