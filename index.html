@@ -31,6 +31,27 @@
     <li>Finction</li>
     <li>Pbjects</li>
     <li>Built-In Objects</li>
+
+   
+
+  </div>
+
+  <div  class="jumbtron text-center">
+    <button type="button" class="btn btn-light" onclick="changeColor()">
+      Color change
+    </button>
+  </div>
+
+  <div  class="jumbtron text-center">
+    <button type="button" style = 'margin: 10px;'class="btn btn-light changeColor2" onclick="changeColor()">
+      Color change 2
+    </button>
+  </div>
+
+  <div  class="jumbtron text-center">
+    <button type="button" style = 'margin: 10px;'class="btn btn-light no-Btn">
+      Not listening
+    </button>
   </div>
 
   <script>
@@ -38,7 +59,32 @@
     function changeText (){
       header.innerText = 'Hello World!'
     }
-
   </script>
+
+<script>
+function changeColor(){
+  document.body.style.backgroundColor = '#D4D4D4';
+}
+
+
+const btnChange2 = document.querySelector('.changeColor2');
+btnChange2.onclick = () => {
+  document.body.style.backgroundColor = '#4D5482'
+}
+
+
+const btnChange3 = document.querySelector('.no-Btn');
+noListenig = () =>{
+  document.body.style.backgroundColor = '#000000';
+}
+
+
+btnChange3.addEventListener('click', noListenig);
+
+</script>
+
+
 </body>
+
+
 </html>
